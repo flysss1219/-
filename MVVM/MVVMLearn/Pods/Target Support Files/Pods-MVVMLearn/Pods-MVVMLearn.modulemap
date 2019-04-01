@@ -1,0 +1,6 @@
+module Pods_MVVMLearn {
+  umbrella header "Pods-MVVMLearn-umbrella.h"
+
+  export *
+  module * { export * }
+}

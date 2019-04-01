@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--<div id="div1">-->
+<!--    <p id="p1">这个是一个段落</p>-->
+<!--    <p id="p2">这个是另外一个段落</p>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    let  parm = document.createElement("p");-->
+<!--    let  node = document.createTextNode("这是js创建的段落");-->
+<!--    parm.appendChild(node);-->
+
+<!--    let  parent = document.getElementById("div1");-->
+<!--    let  child1 = document.getElementById("p1");-->
+<!--    // parent.removeChild(child1);-->
+<!--    // element.insertBefore(parm,child1);-->
+<!--    // element.appendChild(parm);-->
+
+<!--    // child1.parentNode.removeChild(child1);-->
+<!--    parent.replaceChild(parm, child1);-->
+
+<!--</script>-->
+
+
+<div id="div2">
+
+    <p> p1 </p>
+    <p> p2 </p>
+    <p> p3 </p>
+
+</div>
+
+<script>
+    // var myCollection = document.getElementsByTagName("p");
+    // // document.getElementById("index").innerHTML = myCollection.length;
+    //
+    // var  i;
+    // for (i = 0 ; i < myCollection.length; i++) {
+    //     myCollection[i].style.backgroundColor = "red";
+    // }
+
+    // HTMLCollection 不是一个数组！
+    // HTMLCollection 看起来可能是一个数组，但其实不是。
+    // 你可以像数组一样，使用索引来获取元素。
+    // HTMLCollection 无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。
+
+    var nodeList = document.querySelectorAll("p");
+    // document.getElementById("demo").innerHTML = nodeList;
+    var nodeList = document.querySelectorAll("p");
+    var i;
+    for (i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "blue";
+    }
+    /*
+    *
+    * HTMLCollection 与 NodeList 的区别
+      HTMLCollection 是 HTML 元素的集合。
+      NodeList 是一个文档节点的集合。
+      NodeList 与 HTMLCollection 有很多类似的地方。
+      NodeList 与 HTMLCollection 都与数组对象有点类似，可以使用索引 (0, 1, 2, 3, 4, ...) 来获取元素。
+      NodeList 与 HTMLCollection 都有 length 属性。
+      HTMLCollection 元素可以通过 name，id 或索引来获取。
+      NodeList 只能通过索引来获取。
+      只有 NodeList 对象有包含属性节点和文本节点。
+      *
+      * 节点列表不是一个数组！
+        节点列表看起来可能是一个数组，但其实不是。
+        你可以像数组一样，使用索引来获取元素。
+        节点列表无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。
+*
+    * */
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+target "AF.3x.Rec" do
+
+pod "AFNetworking"
+
+
+end
+
